@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mindtec IT Solutions</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(-45deg, #f8fffe, #e0f7fa, #eef2ff, #f0fdfa);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+}
+
+/* NAVBAR */
+.navbar {
+    background: rgba(255,255,255,0.95);
+    backdrop-filter: blur(10px);
+}
+
+/* HERO SLIDER */
+.carousel-item {
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.carousel-item::after {
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background: linear-gradient(135deg, rgba(0,0,0,0.65), rgba(20,184,166,0.5));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-box {
+    background: rgba(0,0,0,0.4);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+/* CARDS */
+.card {
+    border:none;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.card:hover {
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.service-card img {
+    height:220px;
+    object-fit:cover;
+}
+
+/* CTA */
+.cta {
+    background: linear-gradient(135deg,#14b8a6,#6366f1);
+    color:white;
+    padding:60px 0;
+    text-align:center;
+}
+
+/* FOOTER */
+.footer {
+    background: linear-gradient(135deg,#14b8a6,#6366f1);
+    color:white;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+<div class="container">
+<a class="navbar-brand fw-bold">Mindtec</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="3000">
+
+<div class="carousel-inner">
+
+<!-- IMAGE 3 -->
+<div class="carousel-item active" style="background-image:url('https://images.unsplash.com/photo-1573164713714-d95e436ab8d6?auto=format&fit=crop&w=1920&q=80')">
+<div class="hero-content">
+<div class="hero-box">
+<!--<h1>Professional IT Support</h1> -->
+<h1>Professional Technology Assistance</h1>
+<p>
+Dedicated solutions for growing businesses.<BR><BR>
+📞 647-546-7558<BR><BR>
+Info@mindtec.ca 
+</p>
+
+</div>
+</div>
+</div>
+
+
+<div class="carousel-item" style="background-image:url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1920&h=500&q=80')">
+<div class="hero-content">
+<div class="hero-box" data-aos="fade-up">
+<h1>Managed IT Services & Business Solutions</h1>
+<p>Reliable, scalable and secure IT infrastructure.</p>
+<p>
+Dedicated solutions for growing businesses.<BR><BR>
+📞 647-546-7558<BR><BR>
+Info@mindtec.ca 
+</p>
+
+</div>
+</div>
+</div>
+
+<div class="carousel-item" style="background-image:url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1920&q=80')">
+<div class="hero-content"><div class="hero-box"><h1>Cloud Solutions</h1>
+<p>
+Dedicated solutions for growing businesses.<BR><BR>
+📞 647-546-7558<BR><BR>
+Info@mindtec.ca 
+</p>
+
+</div>
+</div>
+</div>
+
+<div class="carousel-item" style="background-image:url('https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1920&q=80')">
+<div class="hero-content"><div class="hero-box"><h1>Cyber Security</h1>
+<p>
+Dedicated solutions for growing businesses.<BR><BR>
+📞 647-546-7558<BR><BR>
+Info@mindtec.ca 
+</p>
+
+</div></div>
+</div>
+
+</div>
+</div>
+
+<!-- SERVICES -->
+<section class="container my-5">
+<h2 class="text-center mb-5" data-aos="fade-down">Our Services</h2>
+
+<div class="row g-4">
+
+<!-- SERVICE 1 Managed IT Support-->
+<div class="col-md-4" data-aos="zoom-in">
+<div class="card service-card">
+<img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?auto=format&q=80">
+<div class="card-body">
+<h5>Managed IT Support</h5>
+<p>End-to-end IT monitoring, troubleshooting and management.</p>
+<P>At Mindtec IT Support, our mission is to provide reliable and efficient IT services to businesses. We strive to help our clients achieve their goals and grow their businesses by leveraging the latest technologies and best practices. <BR>
+When you need an IT partnership for IT Support, IT services or a Managed Services Provider (MSP) in Toronto,
+to help you maintain equipment and manage Cloud, Email, Phone, Backups,
+choose MINDTEC.<BR>
+We can handle all of your IT needs with a plan that meets your budget.
+</P>
+</div>
+</div>
+</div>
+
+<!-- SERVICE 2 --Cloud Services -->
+<div class="col-md-4" data-aos="zoom-in" data-aos-delay="100">
+<div class="card service-card">
+<img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&q=80">
+<div class="card-body">
+<h5>Cloud Services</h5>
+<p>Secure, scalable cloud infrastructure and migration.</p>
+<p>At Mindtec IT Support, we offer a wide range of Cloud.
+Cloud has become one of the fastest-growing IT platforms. Many people ask us “What does ‘Cloud’ mean? In simple terms, the term ‘cloud’ means maintaining an application or environment at an offsite location. There are many different options for having a cloud environment. Many people are familiar with Microsoft Azure, Amazon Web Services (AWS), and Google Cloud. With these services, businesses often feel that they no longer retain complete control of their data and so are wary of putting their information in the cloud. 
+</p>
+</div>
+</div>
+</div>
+
+<!-- SERVICE 3 Cyber Security-->
+<div class="col-md-4" data-aos="zoom-in" data-aos-delay="200">
+<div class="card service-card">
+<img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&q=80">
+<div class="card-body">
+<h5>Cyber Security</h5>
+<p>Advanced protection and threat monitoring solutions.</p>
+<p>Network Security is one of the significant issues that businesses face. With hacks, attacks, ransomware, vulnerabilities, and data theft affecting companies worldwide, it is just a matter of time until you are on the bad guy's radar. MindTech`s' goal is to provide the best protection as possible.  
+</p>
+</div>
+</div>
+</div>
+
+<!-- SERVICE 4 VoIP Phone Systems-->
+<div class="col-md-4" data-aos="fade-left">
+<div class="card service-card">
+<img src="https://images.unsplash.com/photo-1580894732444-8ecded7900cd?auto=format&q=80">
+<div class="card-body">
+<h5>VoIP Phone Systems</h5>
+<p>Modern communication systems with flexibility.</p>
+<p>At Mindtec IT Support,  VoIP, or voice-over-IP (Internet-Protocol), offers a better, more economical way to communicate with your business partners, customers, and vendors. VoIP systems use high-speed Internet connections to make and receive phone calls.  If you’re presently using an older analog business phone system – especially for long distance and international calls – voice-over-IP can save you money while providing increased mobility for you and your employees. Great Computer Systems can examine your current needs and offer Chicago VoIP solutions to replace or enhance your current business phone system. 
+</p>
+</div>
+</div>
+</div>
+
+<!-- SERVICE 5 Networking & Wiring-->
+<div class="col-md-4" data-aos="fade-right">
+<div class="card service-card">
+<img src="https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&q=80">
+<div class="card-body">
+<h5>Networking & Wiring</h5>
+<p>Structured cabling and network optimization.</p>
+<p> The structured wiring services are the most common type of networking installation. The cables that make up a structured cabling system can be made from copper, fiber optic or coaxial cable and they all have specific characteristics which determine how well they will perform under different conditions. A properly installed structured cabling system is designed to provide reliable connectivity for your business’s data communications needs. It also helps you avoid costly downtime due to equipment failure by providing redundancy so if one part fails another takes over seamlessly. 
+</p>
+</div>
+</div>
+</div>
+
+<!-- SERVICE 6 Web Development-->
+<div class="col-md-4" data-aos="fade-left">
+<div class="card service-card">
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&q=80">
+<div class="card-body">
+<h5>Web Development</h5>
+<p>Responsive, SEO-friendly websites.</p>
+<p>We are highly experienced at providing affordable web design and hosting with an emphasis on making sure your marketing messages have maximum impact on your website visitors and that search engines find your website. Today’s websites are built with responsive design, meaning the website adapts to all browser sizes and mobile devices. It will rearrange content and provide an optimized experience for smart phones, tablets, and desktop computers. It’s likely that over 50% of your website visitors are viewing your site from their mobile device. If your website was built more than a few years ago, you will likely benefit from a new, responsive website. Contact us today for more information! 
+</p>
+</div>
+</div>
+</div>
+
+<!-- SERVICE 7 Surveillance Camera-->
+<div class="col-md-4" data-aos="fade-right">
+<div class="card service-card">
+<img src="https://images.unsplash.com/photo-1558002038-1055907df827?auto=format&q=80">
+<div class="card-body">
+<h5>Surveillance Camera</h5>
+<p>CCTV installation and monitoring.</p>
+<p>At Mindtec IT Support, we offer a wide range of IT services to meet the needs of small businesses. From network setup and maintenance to cloud solutions and cybersecurity, we have the expertise to help you achieve your goals and keep your business running smoothly.
+</p>
+</div>
+</div>
+</div>
+
+<!-- SERVICE 8 -->
+<div class="col-md-4" data-aos="flip-left">
+<div class="card service-card">
+<img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&q=80">
+<div class="card-body">
+<h5>Desktop, Laptop & Server Management</h5>
+<p>Complete device lifecycle management.</p>
+<P>Your computers and mobile devices are essential to your business. We can help you install, integrate, troubleshoot, and manage your servers, desktop PCs, and mobile devices powered by Windows, Apple macOS/OS X, iOS, and Android. Whether it’s choosing, setting up and configuring a new device or troubleshooting existing ones we are here to help! </P>
+</div>
+</div>
+</div>
+
+<!-- SERVICE 9 -->
+<div class="col-md-4" data-aos="flip-right">
+<div class="card service-card">
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&q=80">
+<div class="card-body">
+<h5>Employee Attendance Solution</h5>
+<p>Smart workforce tracking systems.</p>
+<p>At Mindtec IT Support, we offer a wide range of Employee Attendance solution. Managing employee attendance effectively is one of the most critical yet challenging tasks for organizations. Poor attendance management can lead to productivity loss, legal complications, and decreased employee morale. 
+</p>
+</div>
+</div>
+</div>
+
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="cta" data-aos="flip-up">
+<h2>Contact Us</h2>
+<p class="mt-3">
+📞 647-546-7558 <br><br>
+Mindtec IT Support <br>
+www.mindtec.ca <br>
+Info@mindtec.ca <br>
+Dheeraj@mindtec.ca
+</p>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer text-center py-3">
+<p>© 2026 Mindtec IT Solutions</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+AOS.init({
+    duration: 700,
+    once: true,
+    easing: 'ease-in-out'
+});
+</script>
+
+</body>
+</html>
