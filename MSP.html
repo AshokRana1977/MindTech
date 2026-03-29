@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mindtec IT Solutions</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+<style>
+
+/* GLOBAL */
+body {
+    font-family: Arial;
+}
+
+:root {
+--primary:#0f2027;
+--secondary:#2c5364;
+}
+
+.hero {
+background: linear-gradient(135deg,#000428,#004e92);
+color:white;
+padding:100px 0;
+}
+
+/* NAVBAR COMPACT */
+.navbar {
+	color:white;
+	background: linear-gradient(135deg,#000428,#004e92);
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    padding: 6px 0;   /* 👈 reduces height */
+	
+}
+
+/* LOGO SIZE CONTROL */
+.logo img {
+    	height: 130px;   /* 👈 fixed logo height */
+	width: auto;
+	border-radius: 10px;
+}
+
+/* NAV LINKS */
+.navbar-nav .nav-link {
+    padding: 6px 12px;  /* 👈 reduce spacing */
+    font-size: 14px;
+	color:white;
+}
+
+/* NAV LINKS BASE */
+.navbar-nav .nav-link {
+    color: #888;
+    position: relative;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+/* HOVER COLOR */
+.navbar-nav .nav-link:hover {
+    color: #14b8a6; /* match theme */
+}
+
+/* UNDERLINE EFFECT (SMOOTH) */
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #14b8a6;
+    transition: width 0.3s ease;
+}
+
+/* ON HOVER → EXPAND LINE */
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+
+
+/* HERO */
+.carousel-item {
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.carousel-item::after {
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    background: linear-gradient(135deg, rgba(0,0,0,0.65), rgba(20,184,166,0.5));
+}
+
+.hero-content {
+    position:relative;
+    z-index:2;
+    color:white;
+    text-align:center;
+    top:50%;
+    transform:translateY(-20%);
+    height:40%;             /* 👈 MAIN CHANGE */
+    margin: auto;            /* center horizontally */
+}
+
+/* SERVICES */
+.card {
+    border:none;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.card ul {
+    list-style: none;
+    padding-left: 0;
+    padding-left: 18px;
+    font-size: 14px;
+}
+.card:hover {
+    transform:translateY(-8px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.service-card img {
+    height:200px;
+    object-fit:cover;
+}
+
+/* CTA */
+.cta {
+    background:#0d3b66;
+    color:white;
+    padding:60px 0;
+}
+
+/* FOOTER */
+.footer {
+    background:#0d3b66;
+    color:white;
+}
+
+
+
+.contact-section {
+    padding: 100px 0;  /* increased */
+    margin-top: 50px;  /* 👈 important */
+ background: linear-gradient(135deg,#f8fafc,#eef2ff);
+}
+
+/* ICON BOX */
+
+.icon-box-service {
+font-size:40px;
+color:var(--primary);
+}
+
+
+.icon-box {
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(45deg,#14b8a6,#6366f1);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+/* TEXT */
+.contact-item h6 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.contact-item p {
+    margin: 0;
+    color: #555;
+}
+section {
+    scroll-margin-top: 80px;
+}
+
+.about-section {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.about-section h2 {
+    font-weight: 700;
+}
+
+.about-list {
+    list-style: none;
+    padding: 0;
+}
+
+.about-list li {
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.footer {
+	--background: #0d3b66;
+	background: linear-gradient(135deg,#000428,#004e92);
+	color:white;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #ddd;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #fff;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<section id="home" >
+<nav class="navbar navbar-expand-lg">
+<div class="container">
+<a class="navbar-brand logo">
+<img src="img/MT_Logo1.png">
+</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">☰</button>
+
+<div class="collapse navbar-collapse" id="nav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+</ul>
+
+</div>
+</div>
+</nav>
+</section>
+
+<!-- HERO -->
+<div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+<div class="carousel-inner">
+
+<div class="carousel-item active" style="background-image:url('img/managed_Services.jpeg?w=1920&q=80')">
+<div class="hero-content">
+	<h1>Managed IT Services & Business Solutions</h1>
+	<p>Reliable, scalable and secure IT infrastructure.</p>
+	<p>
+	Dedicated solutions for growing businesses.<BR><BR>
+	📞 647-546-7558<BR><BR>
+	Info@mindtec.ca 
+	</p>
+</div>
+</div>
+
+<div class="carousel-item" style="background-image:url('img/cloud.jpg?w=1920&q=80')">
+<div class="hero-content">
+	<h1>Cloud Solutions</h1>
+	<p>Secure and scalable infrastructure</p>
+	<p>Dedicated solutions for growing businesses.<BR><BR>
+	📞 647-546-7558<BR><BR>
+	Info@mindtec.ca 
+	</p>
+
+</div>
+</div>
+
+<div class="carousel-item" style="background-image:url('img/cybersecurity.jpg?w=1920&q=80')">
+<div class="hero-content">
+	<h1>Cyber Security</h1>
+	<p>Secure and scalable infrastructure</p>
+	<p>
+	Dedicated solutions for growing businesses.<BR><BR>
+	📞 647-546-7558<BR><BR>
+	Info@mindtec.ca 
+	</p>
+</div>
+</div>
+
+
+
+</div>
+</div>
+
+
+<!-- ABOUT -->
+<section id="about" class="about-section">
+<div class="container">
+
+<div class="row align-items-center">
+
+<!-- LEFT TEXT -->
+<div class="col-md-6" data-aos="fade-right">
+
+<h2 class="mb-4">About Mindtec IT Solutions</h2>
+
+<p>
+At Mindtec IT Solutions, we deliver reliable, scalable and secure IT services tailored for modern businesses. 
+Our mission is to simplify technology, enhance productivity and ensure business continuity through proactive IT management.
+</p>
+
+<p>
+We act as your trusted IT partner, providing end-to-end solutions from infrastructure management to cybersecurity and cloud transformation.
+</p>
+
+<ul class="about-list mt-4">
+<li>✔ 24/7 Managed IT Support</li>
+<li>✔ Cloud & Digital Transformation Experts</li>
+<li>✔ Advanced Cyber Security Solutions</li>
+<li>✔ Business Continuity & Backup Planning</li>
+<li>✔ Experienced IT Professionals</li>
+</ul>
+
+</div>
+
+<!-- RIGHT IMAGE -->
+<div class="col-md-6 text-center" data-aos="fade-left">
+
+<img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80"
+class="img-fluid rounded shadow">
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- SERVICES -->
+<section id="services" class="container my-5">
+<h2 class="text-center mb-5" data-aos="fade-down">Our Services</h2>
+
+<div class="row g-4">
+
+<!-- EXISTING -->
+<div class="col-md-4" data-aos="fade-up">
+<div class="card p-4 text-center">
+<div class="icon-box-service"><i class="bi bi-gear"></i></div>
+<h5>Managed IT Support</h5>
+<p>End-to-end IT management ensuring smooth operations.</p>
+
+<p>
+Our Managed IT Services provide proactive, reliable, and scalable IT support to ensure your business operations run smoothly without interruptions.
+<br><br>
+We monitor, manage, and optimize your IT environment while preventing issues before they impact productivity.
+</p>
+
+<ul class="text-start mt-3">
+<li>✔ 24/7 Monitoring & Helpdesk Support</li>
+<li>✔ Proactive Maintenance & Patch Management</li>
+<li>✔ Network & Server Management</li>
+<li>✔ Cybersecurity & Threat Protection</li>
+<li>✔ Remote & Onsite Support</li>
+<li>✔ Performance Optimization & Reporting</li>
+</ul>
+
+</div>
+</div>
+
+<div class="col-md-4" data-aos="fade-up">
+<div class="card p-4 text-center">
+<div class="icon-box-service"><i class="bi bi-cloud"></i></div>
+<h5>Cloud Services</h5>
+<p>
+Our Cloud Services help businesses transition to modern, flexible IT environments with minimal disruption. We design, deploy and manage secure cloud infrastructure tailored to your business needs.
+<br><br>
+From migration to ongoing management, we ensure high availability, data protection, and optimized performance while reducing operational costs.
+</p>
+
+<ul class="text-start">
+<li>✔ Cloud Strategy & Consulting</li>
+<li>✔ Azure, AWS & Microsoft 365 Solutions</li>
+<li>✔ Backup & Disaster Recovery</li>
+<li>✔ Security, Compliance & Data Protection</li>
+<li>✔ Continuous Monitoring & Optimization</li>
+</ul>
+</div>
+</div>
+
+<div class="col-md-4" data-aos="fade-up">
+<div class="card p-4 text-center">
+<div class="icon-box-service"><i class="bi bi-shield-lock"></i></div>
+<h5>Cyber Security</h5>
+<p>Advanced protection against digital threats.</p>
+<p>
+Our Cyber Security services provide multi-layered protection against modern cyber threats. We implement proactive security measures, continuous monitoring, and rapid response strategies to ensure your business remains secure and compliant.
+<br><br>
+From endpoint protection to network security and compliance management, we safeguard your IT environment while minimizing risks and downtime.
+</p>
+
+<ul class="text-start mt-3">
+<li>✔ 24/7 Threat Monitoring & Incident Response</li>
+<li>✔ Endpoint Detection & Response (EDR)</li>
+<li>✔ Firewall & Network Security Management</li>
+<li>✔ Email Security & Anti-Phishing Protection</li>
+<li>✔ Vulnerability Assessments & Security Audits</li>
+<li>✔ Compliance & Data Protection (GDPR, HIPAA)</li>
+</ul>
+</div>
+</div>
+
+<div class="col-md-4" data-aos="fade-up">
+<div class="card p-4 text-center">
+<div class="icon-box-service"><i class="bi bi-telephone"></i></div>
+<h5>VoIP Phone Systems</h5>
+<p>Modern communication solutions.</p>
+<p>
+Enhance your business communication with modern VoIP solutions that offer flexibility, scalability, and cost savings over traditional phone systems.
+<br><br>
+We provide reliable and feature-rich communication systems tailored to your business needs.
+</p>
+
+<ul class="text-start mt-3">
+<li>✔ Cloud-Based Phone Systems</li>
+<li>✔ Call Routing & Auto Attendant</li>
+<li>✔ Video & Conference Calling</li>
+<li>✔ Mobile & Remote Access</li>
+<li>✔ Call Recording & Analytics</li>
+<li>✔ Scalable Business Communication</li>
+</ul>
+</div>
+</div>
+
+<div class="col-md-4" data-aos="fade-up">
+<div class="card p-4 text-center">
+<div class="icon-box-service"><i class="bi bi-diagram-3"></i></div>
+<h5>Networking & Wiring</h5>
+<p>Reliable structured cabling solutions.</p>
+<p>
+We design and implement reliable network infrastructure to ensure seamless connectivity and high performance across your organization.
+<br><br>
+From structured cabling to advanced network setup, we deliver scalable and secure solutions.
+</p>
+
+<ul class="text-start mt-3">
+<li>✔ Structured Cabling & Wiring</li>
+<li>✔ Network Design & Implementation</li>
+<li>✔ Wi-Fi Setup & Optimization</li>
+<li>✔ Router & Switch Configuration</li>
+<li>✔ Network Security & Monitoring</li>
+<li>✔ Performance Optimization</li>
+</ul>
+</div>
+</div>
+
+<div class="col-md-4" data-aos="fade-up">
+<div class="card p-4 text-center">
+<div class="icon-box-service"><i class="bi bi-globe"></i></div>
+<h5>Web Development</h5>
+<p>Responsive and performance-driven websites.</p>
+<p>
+We create modern, responsive and high-performance websites that enhance your digital presence and drive business growth.
+<br><br>
+Our solutions are SEO-friendly, user-centric, and optimized for all devices.
+</p>
+
+<ul class="text-start mt-3">
+<li>✔ Responsive Website Design</li>
+<li>✔ SEO Optimization</li>
+<li>✔ Performance & Speed Optimization</li>
+<li>✔ UI/UX Design</li>
+<li>✔ E-commerce Solutions</li>
+<li>✔ Ongoing Maintenance & Support</li>
+</ul>
+</div>
+</div>
+
+<!-- NEW SERVICES -->
+<div class="col-md-4" data-aos="fade-up">
+<div class="card p-4 text-center">
+<div class="icon-box-service"><i class="bi bi-camera-video"></i></div>
+<h5>Surveillance Camera</h5>
+<p>Advanced CCTV solutions for security and monitoring.</p>
+<p>
+Secure your business premises with advanced surveillance systems designed for real-time monitoring and enhanced safety.
+<br><br>
+We provide end-to-end CCTV solutions with remote access and intelligent monitoring capabilities.
+</p>
+
+<ul class="text-start mt-3">
+<li>✔ CCTV Installation & Setup</li>
+<li>✔ HD & IP Camera Solutions</li>
+<li>✔ Remote Monitoring Access</li>
+<li>✔ Motion Detection & Alerts</li>
+<li>✔ Video Recording & Storage</li>
+<li>✔ Maintenance & Support</li>
+</ul>
+</div>
+</div>
+
+<div class="col-md-4" data-aos="fade-up">
+<div class="card p-4 text-center">
+<div class="icon-box-service"><i class="bi bi-pc-display"></i></div>
+<h5>Desktop, Laptop & Server Management</h5>
+<p>Comprehensive device and server management services.</p>
+<p>
+We manage and maintain your IT assets to ensure optimal performance, security, and reliability across your organization.
+<br><br>
+Our services cover complete lifecycle management from setup to ongoing support.
+</p>
+
+<ul class="text-start mt-3">
+<li>✔ Device Setup & Configuration</li>
+<li>✔ Server Installation & Management</li>
+<li>✔ Software Updates & Patch Management</li>
+<li>✔ Performance Monitoring</li>
+<li>✔ Data Backup & Recovery</li>
+<li>✔ Troubleshooting & Support</li>
+</ul>
+</div>
+</div>
+
+<div class="col-md-4" data-aos="fade-up">
+<div class="card p-4 text-center">
+<div class="icon-box-service"><i class="bi bi-person-check"></i></div>
+<h5>Employee Attendance Solution</h5>
+<p>Smart attendance tracking and workforce management.</p>
+<p>
+Streamline workforce management with smart attendance solutions that ensure accurate tracking, improved productivity, and seamless payroll integration.
+<br><br>
+Our solutions eliminate manual errors and provide real-time insights into employee attendance and performance.
+</p>
+</div>
+</div>
+
+</div>
+</section>
+
+
+<!-- TESTIMONIAL -->
+<section class="container text-center my-5">
+<h2>Client Testimonials</h2>
+<p>"Excellent IT support and reliable service."</p>
+<p>"Helped us scale our infrastructure seamlessly."</p>
+</section>
+
+<section id="contact" class="contact-section">
+<div class="container">
+
+<div class="row align-items-center">
+
+<!-- LEFT CONTENT -->
+<div class="col-md-6" data-aos="fade-right">
+
+<h2 class="mb-4">Contact Us</h2>
+
+<div class="contact-item d-flex align-items-start mb-4">
+<div class="icon-box">
+📍
+</div>
+<div>
+<h6>Location</h6>
+<p>Toronto, Canada</p>
+</div>
+</div>
+
+<div class="contact-item d-flex align-items-start mb-4">
+<div class="icon-box">
+📞
+</div>
+<div>
+<h6>Phone</h6>
+<p>647-546-7558</p>
+</div>
+</div>
+
+<div class="contact-item d-flex align-items-start mb-4">
+<div class="icon-box">
+✉️
+</div>
+<div>
+<h6>Email</h6>
+<p>Info@mindtec.ca<br>Dheeraj@mindtec.ca</p>
+</div>
+</div>
+
+</div>
+
+<!-- RIGHT IMAGE -->
+<div class="col-md-6 text-center" data-aos="fade-left">
+<img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80" 
+class="img-fluid rounded shadow">
+</div>
+
+</div>
+</div>
+</section>
+
+<!-- FOOTER 
+<footer class="footer text-center py-3">
+<p>© 2026 Mindtec IT Solutions</p>
+</footer> -->
+
+<footer class="footer pt-4 pb-3">
+
+<div class="container">
+
+<div class="row text-center text-md-start">
+
+<!-- LOGO / INFO -->
+<div class="col-md-4 mb-3">
+	<a class="navbar-brand logo">
+		<img src="img/MT_Logo1.png">
+	</a>
+	<p>Reliable IT support & cloud solutions for growing businesses.</p>
+</div>
+
+<!-- NAV LINKS -->
+<div class="col-md-4 mb-3">
+	<h6>Quick Links</h6>
+	<ul class="footer-links">
+	<li><a href="#home">Home</a></li>
+	<li><a href="#services">Services</a></li>
+	<li><a href="#about">About</a></li>
+	<li><a href="#contact">Contact</a></li>
+</ul>
+</div>
+
+<!-- CONTACT -->
+<div class="col-md-4 mb-3">
+<h6>Contact</h6>
+<p>
+📞 647-546-7558 <br>
+Info@mindtec.ca
+</p>
+</div>
+
+</div>
+
+<hr>
+
+<p class="text-center mb-0">
+© 2026 Mindtec IT Solutions | All Rights Reserved
+</p>
+
+</div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+<script>
+AOS.init({duration:700,once:true});
+</script>
+
+</body>
+</html>
