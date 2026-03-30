@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Mindtec IT Solutions - Reliable, scalable and secure IT services for modern businesses.">
+
+<title>Mindtec IT Solutions - Redesign</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<!-- Bootstrap & Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+<!-- AOS Animations -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" rel="stylesheet">
+
+<!-- Custom Styles -->
+<link rel="stylesheet" href="style-redesign.css">
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<section id="home" class="p-0 m-0">
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand logo" href="#home" data-aos="fade-down">
+        <!-- Kept the original logo image -->
+        <img src="img/MT_Logo1.png" alt="Mindtec IT Solutions Logo">
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+        <i class="bi bi-list text-white"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto" data-aos="fade-down" data-aos-delay="100">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <div class="ms-lg-4" data-aos="fade-down" data-aos-delay="200">
+           <a href="#contact" class="btn btn-primary-custom">Get IT Support</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</section>
+
+<!-- HERO -->
+<div id="heroCarousel" class="carousel slide hero-carousel carousel-fade" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    
+    <!-- Slide 1 -->
+    <div class="carousel-item active" style="background-image:url('img/managed_Services.jpeg');">
+      <div class="hero-content">
+        <div data-aos="zoom-in" data-aos-duration="1000">
+          <span class="text-gradient fw-bold text-uppercase tracking-wider mb-2 d-inline-block">Mindtec IT Solutions</span>
+          <h1 class="hero-title text-white">Managed IT Services <br>& Business Solutions</h1>
+          <p class="hero-subtitle">Reliable, scalable, and secure IT infrastructure tailored for modern, growing businesses.</p>
+          
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="#services" class="btn btn-primary-custom px-4 py-2">Explore Solutions</a>
+            <a href="#about" class="btn btn-outline-custom px-4 py-2">Discover More</a>
+          </div>
+          
+          <div class="hero-contact mt-5">
+             <span><i class="bi bi-telephone-fill"></i> 647-546-7558</span>
+             <span><i class="bi bi-envelope-fill"></i> Info@mindtec.ca</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="carousel-item" style="background-image:url('img/cloud.jpg');">
+      <div class="hero-content">
+        <span class="text-gradient fw-bold text-uppercase tracking-wider mb-2 d-inline-block">Scalable Future</span>
+        <h1 class="hero-title text-white">Modern Cloud Solutions</h1>
+        <p class="hero-subtitle">Transition to flexible, high-availability cloud environments with enhanced security and reduced costs.</p>
+        
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="#contact" class="btn btn-primary-custom px-4 py-2">Talk to an Expert</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="carousel-item" style="background-image:url('img/cybersecurity.jpg');">
+      <div class="hero-content">
+        <span class="text-gradient fw-bold text-uppercase tracking-wider mb-2 d-inline-block">Protect Your Assets</span>
+        <h1 class="hero-title text-white">Advanced Cyber Security</h1>
+        <p class="hero-subtitle">Multi-layered protection, threat detection, and continuous monitoring to keep your business safe.</p>
+        
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+          <a href="#services" class="btn btn-primary-custom px-4 py-2">Our Security Suite</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="about-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      
+      <!-- LEFT IMAGE -->
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="about-image-wrapper">
+          <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80" alt="About Mindtec" class="img-fluid">
+          <!-- Floating Badge -->
+          <div class="about-badge">
+             <i class="bi bi-shield-check"></i>
+             <div>
+                <h4>24/7 Support</h4>
+                <p>Always monitoring</p>
+             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT TEXT -->
+      <div class="col-md-6" data-aos="fade-left">
+        <h6 class="text-gradient text-uppercase fw-bold mb-2">Who We Are</h6>
+        <h2 class="mb-4">Empowering Businesses Through <span class="text-gradient">Technology</span></h2>
+        
+        <p>
+          At <strong>Mindtec IT Solutions</strong>, we deliver reliable, scalable and secure IT services tailored for modern businesses. 
+          Our mission is to simplify technology, enhance productivity and ensure business continuity through proactive IT management.
+        </p>
+        <p>
+          We act as your trusted IT partner, providing end-to-end solutions from infrastructure management to cybersecurity and cloud transformation.
+        </p>
+
+        <ul class="about-list">
+          <li><i class="bi bi-check-lg"></i> 24/7 Managed IT Support & Helpdesk</li>
+          <li><i class="bi bi-cloud-check"></i> Cloud & Digital Transformation Experts</li>
+          <li><i class="bi bi-shield-lock"></i> Advanced Cyber Security Solutions</li>
+          <li><i class="bi bi-hdd-network"></i> Business Continuity & Backup Planning</li>
+        </ul>
+        
+        <div class="mt-4">
+           <a class="btn btn-outline-custom" href="#services">Discover Our Services</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="services-section">
+  <div class="container">
+    
+    <div class="text-center mb-5" data-aos="fade-down">
+      <h6 class="text-gradient text-uppercase fw-bold mb-2">What We Do</h6>
+      <h2>Our Premium Services</h2>
+      <p class="mx-auto" style="max-width: 600px;">Comprehensive IT management ensuring smooth operations, robust security, and scalable infrastructure.</p>
+    </div>
+
+    <div class="row g-4">
+      
+      <!-- Managed IT Support -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-gear-wide-connected"></i></div>
+          <h5>Managed IT Support</h5>
+          <p>Proactive, reliable, and scalable IT support to ensure business operations run smoothly without interruptions.</p>
+          <ul>
+            <li><i class="bi bi-arrow-right-short"></i> 24/7 Monitoring & Support</li>
+            <li><i class="bi bi-arrow-right-short"></i> Proactive Patch Management</li>
+            <li><i class="bi bi-arrow-right-short"></i> Network & Server Management</li>
+            <li><i class="bi bi-arrow-right-short"></i> Remote & Onsite Support</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Cloud Services -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-cloud-arrow-up"></i></div>
+          <h5>Cloud Services</h5>
+          <p>Transition to modern, flexible IT environments. We design, deploy and manage secure cloud infrastructure.</p>
+          <ul>
+            <li><i class="bi bi-arrow-right-short"></i> Azure, AWS & M365 Solutions</li>
+            <li><i class="bi bi-arrow-right-short"></i> Cloud Strategy & Consulting</li>
+            <li><i class="bi bi-arrow-right-short"></i> Backup & Disaster Recovery</li>
+            <li><i class="bi bi-arrow-right-short"></i> Continuous Optimization</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Cyber Security -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-shield-lock-fill"></i></div>
+          <h5>Cyber Security</h5>
+          <p>Multi-layered protection against modern cyber threats, ensuring compliance and minimizing risks.</p>
+          <ul>
+            <li><i class="bi bi-arrow-right-short"></i> 24/7 Threat Monitoring</li>
+            <li><i class="bi bi-arrow-right-short"></i> Endpoint Detection (EDR)</li>
+            <li><i class="bi bi-arrow-right-short"></i> Firewall Management</li>
+            <li><i class="bi bi-arrow-right-short"></i> Vulnerability Assessments</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- VoIP -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-telephone-outbound"></i></div>
+          <h5>VoIP Phone Systems</h5>
+          <p>Enhance business communication with modern VoIP solutions that offer flexibility and cost savings.</p>
+          <ul>
+            <li><i class="bi bi-arrow-right-short"></i> Cloud-Based Phone Systems</li>
+            <li><i class="bi bi-arrow-right-short"></i> Call Routing & Auto Attendant</li>
+            <li><i class="bi bi-arrow-right-short"></i> Video & Conference Calling</li>
+            <li><i class="bi bi-arrow-right-short"></i> Call Recording & Analytics</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Networking -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-router"></i></div>
+          <h5>Networking & Wiring</h5>
+          <p>Reliable network infrastructure design and implementation for seamless, high-performance connectivity.</p>
+          <ul>
+            <li><i class="bi bi-arrow-right-short"></i> Structured Cabling & Wiring</li>
+            <li><i class="bi bi-arrow-right-short"></i> Network Design & Wi-Fi</li>
+            <li><i class="bi bi-arrow-right-short"></i> Router & Switch Config</li>
+            <li><i class="bi bi-arrow-right-short"></i> Performance Optimization</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Web Development -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-globe2"></i></div>
+          <h5>Web Development</h5>
+          <p>Modern, responsive and high-performance websites that enhance digital presence and drive business growth.</p>
+          <ul>
+            <li><i class="bi bi-arrow-right-short"></i> Responsive Website Design</li>
+            <li><i class="bi bi-arrow-right-short"></i> SEO Optimization</li>
+            <li><i class="bi bi-arrow-right-short"></i> UI/UX Design</li>
+            <li><i class="bi bi-arrow-right-short"></i> E-commerce Solutions</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Surveillance -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-camera-video-fill"></i></div>
+          <h5>Surveillance Cameras</h5>
+          <p>Advanced CCTV solutions designed for real-time monitoring and robust safety protocols.</p>
+          <ul>
+            <li><i class="bi bi-arrow-right-short"></i> HD & IP Camera Solutions</li>
+            <li><i class="bi bi-arrow-right-short"></i> Remote Monitoring Access</li>
+            <li><i class="bi bi-arrow-right-short"></i> Motion Detection Alerts</li>
+            <li><i class="bi bi-arrow-right-short"></i> Video Recording & Storage</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Device Management -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-pc-display-horizontal"></i></div>
+          <h5>Device Management</h5>
+          <p>Manage and maintain IT assets from setup to ongoing support, ensuring optimal security.</p>
+          <ul>
+            <li><i class="bi bi-arrow-right-short"></i> Device Setup & Config</li>
+            <li><i class="bi bi-arrow-right-short"></i> Server Management</li>
+            <li><i class="bi bi-arrow-right-short"></i> Software Patching</li>
+            <li><i class="bi bi-arrow-right-short"></i> Data Backup & Recovery</li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Employee Attendance -->
+      <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="900">
+        <div class="service-card">
+          <div class="service-icon"><i class="bi bi-person-bounding-box"></i></div>
+          <h5>Employee Attendance</h5>
+          <p>Smart attendance solutions ensuring accurate tracking and seamless payroll integration.</p>
+          <ul>
+            <li><i class="bi bi-arrow-right-short"></i> Smart Tracking Solutions</li>
+            <li><i class="bi bi-arrow-right-short"></i> Payroll Integration</li>
+            <li><i class="bi bi-arrow-right-short"></i> Real-time Insights</li>
+            <li><i class="bi bi-arrow-right-short"></i> Error Reduction</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonial-section">
+  <div class="container" data-aos="fade-in">
+    <div class="testimonial-card">
+      <i class="bi bi-quote"></i>
+      <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <p>"Excellent IT support and incredibly reliable service. They feel like part of our internal team."</p>
+            <h6 class="text-gradient fw-bold mt-4">- TechCorp Canada</h6>
+          </div>
+          <div class="carousel-item">
+            <p>"They helped us scale our infrastructure seamlessly during rapid growth. Highly recommended."</p>
+            <h6 class="text-gradient fw-bold mt-4">- Global Logistics Inc.</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+  <div class="container">
+    <div class="row align-items-stretch g-5">
+      
+      <!-- Left Content / Info -->
+      <div class="col-lg-6" data-aos="fade-right">
+        <div class="contact-info-card">
+          <h6 class="text-gradient text-uppercase fw-bold mb-2">Get In Touch</h6>
+          <h2 class="mb-5">Ready to Secure Your <br>IT Infrastructure?</h2>
+          
+          <div class="contact-item">
+            <div class="contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+            <div>
+              <h6>Location</h6>
+              <p>Toronto, Ontario, Canada</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon"><i class="bi bi-telephone-fill"></i></div>
+            <div>
+              <h6>Phone support 24/7</h6>
+              <p>647-546-7558</p>
+            </div>
+          </div>
+          
+          <div class="contact-item">
+            <div class="contact-icon"><i class="bi bi-envelope-fill"></i></div>
+            <div>
+              <h6>Email Inquiries</h6>
+              <p>Info@mindtec.ca<br>Dheeraj@mindtec.ca</p>
+            </div>
+          </div>
+          
+          <div class="mt-5">
+            <button class="btn btn-primary-custom w-100 py-3" data-bs-toggle="modal" data-bs-target="#consultationModal">Schedule a Free Consultation</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Image -->
+      <div class="col-lg-6" data-aos="fade-left">
+        <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=800&q=80" alt="Contact Us" class="contact-image">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CONSULTATION MODAL -->
+<div class="modal fade" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-white" style="background: rgba(11, 17, 32, 0.95); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1);">
+      <div class="modal-header border-bottom-0 pb-0">
+        <h5 class="modal-title fw-bold" id="consultationModalLabel"><span class="text-gradient">Book Your Consultation</span></h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Using FormSubmit API -->
+        <form id="consultationForm" action="https://formsubmit.co/ashokrana1977@gmail.com" method="POST">
+          <!-- FormSubmit Configuration -->
+          <input type="hidden" name="_subject" value="New Consultation Request!">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          
+          <div class="mb-3">
+            <label for="userName" class="form-label text-white-50 small">User Name</label>
+            <input type="text" name="User Name" class="form-control bg-transparent text-white border-secondary" id="userName" placeholder="John Doe" required>
+          </div>
+          <div class="mb-3">
+            <label for="mobileNumber" class="form-label text-white-50 small">Mobile Number</label>
+            <input type="tel" name="Mobile Number" class="form-control bg-transparent text-white border-secondary" id="mobileNumber" placeholder="+1 (555) 000-0000" required>
+          </div>
+          <div class="mb-3">
+            <label for="emailAddress" class="form-label text-white-50 small">Email Address</label>
+            <input type="email" name="Email" class="form-control bg-transparent text-white border-secondary" id="emailAddress" placeholder="john@example.com" required>
+          </div>
+          <div class="mb-4">
+            <label for="message" class="form-label text-white-50 small">Message</label>
+            <textarea name="Message" class="form-control bg-transparent text-white border-secondary" id="message" rows="4" placeholder="How can we help your business?" required></textarea>
+          </div>
+          <div class="d-grid mt-2 mb-2">
+            <button type="submit" class="btn btn-primary-custom py-2" id="submitBtn">Submit Request</button>
+          </div>
+          <div id="formMessage" class="mt-3 text-center d-none small"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="row g-4 justify-content-between">
+      
+      <!-- Logo & Bio -->
+      <div class="col-lg-4 col-md-6 mb-4">
+        <div class="footer-logo">
+           <img src="img/MT_Logo1.png" alt="Mindtec Logo">
+        </div>
+        <p class="footer-desc">
+          Mindtec IT Solutions provides premier, reliable IT support and modern cloud infrastructure explicitly tailored for growing businesses.
+        </p>
+        <div class="d-flex gap-3 mt-3">
+           <a href="#" class="text-white bg-secondary p-2 rounded-circle" style="width: 35px; height: 35px; display:flex; align-items:center; justify-content:center; background: rgba(255,255,255,0.1) !important;"><i class="bi bi-linkedin"></i></a>
+           <a href="#" class="text-white bg-secondary p-2 rounded-circle" style="width: 35px; height: 35px; display:flex; align-items:center; justify-content:center; background: rgba(255,255,255,0.1) !important;"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </div>
+      
+      <!-- Quick Links -->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h6>Quick Links</h6>
+        <ul class="footer-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal -->
+      <div class="col-lg-2 col-md-6 mb-4">
+        <h6>Legal</h6>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Support Policy</a></li>
+        </ul>
+      </div>
+      
+      <!-- Contact Footer -->
+      <div class="col-lg-3 col-md-6 mb-4">
+        <h6>Contact Us</h6>
+        <p class="footer-desc mb-2"><i class="bi bi-telephone text-primary me-2"></i> 647-546-7558</p>
+        <p class="footer-desc"><i class="bi bi-envelope text-primary me-2"></i> Info@mindtec.ca</p>
+      </div>
+
+    </div>
+
+    <!-- Bottom -->
+    <div class="footer-bottom">
+      <p class="mb-0 text-muted">&copy; 2026 Mindtec IT Solutions. All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+<script>
+  // Initialize AOS
+  AOS.init({
+    duration: 800,
+    once: true,
+    offset: 50
+  });
+
+  // Sticky Navbar Blur Effect Scroll Listener
+  window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) {
+      navbar.style.background = 'rgba(11, 17, 32, 0.95)';
+      navbar.style.boxShadow = '0 10px 30px rgba(0,0,0,0.5)';
+    } else {
+      navbar.style.background = 'rgba(11, 17, 32, 0.85)';
+      navbar.style.boxShadow = 'none';
+    }
+  });
+
+  // AJAX Form Submission via FormSubmit
+  const form = document.getElementById('consultationForm');
+  const submitBtn = document.getElementById('submitBtn');
+  const formMessage = document.getElementById('formMessage');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    submitBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Sending...';
+    submitBtn.disabled = true;
+
+    const formData = new FormData(form);
+
+    fetch('https://formsubmit.co/ajax/ashokrana1977@gmail.com', {
+        method: 'POST',
+        body: formData,
+        headers: {
+            'Accept': 'application/json'
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        if(data.success) {
+            formMessage.innerHTML = '<div class="alert alert-success py-2 border-0 bg-success text-white">Request sent successfully! We will contact you soon.</div>';
+            formMessage.classList.remove('d-none');
+            form.reset();
+        } else {
+            formMessage.innerHTML = '<div class="alert alert-danger py-2 border-0 bg-danger text-white">Oops! Something went wrong. Please try again.</div>';
+            formMessage.classList.remove('d-none');
+        }
+    })
+    .catch(error => {
+        formMessage.innerHTML = '<div class="alert alert-danger py-2 border-0 bg-danger text-white">Error sending request. Please check your connection.</div>';
+        formMessage.classList.remove('d-none');
+    })
+    .finally(() => {
+        submitBtn.innerHTML = 'Submit Request';
+        submitBtn.disabled = false;
+        
+        // Hide success message after 5 seconds
+        setTimeout(() => {
+            formMessage.classList.add('d-none');
+        }, 5000);
+    });
+  });
+</script>
+
+</body>
+</html>
