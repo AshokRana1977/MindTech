@@ -144,8 +144,12 @@ section {
 }
 
 /* HERO SECTION (Centered Floating Box) */
+.hero-carousel {
+  margin-top: 110px;
+}
+
 .hero-carousel .carousel-item {
-  height: 90vh;
+  height: calc(90vh - 110px);
   min-height: 650px;
   background-size: cover;
   background-position: center;
@@ -154,13 +158,6 @@ section {
   /* Modern curve */
   border-bottom-right-radius: 60px;
   overflow: hidden;
-}
-
-.hero-carousel .carousel-item::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(180deg, rgba(30, 41, 59, 0.2) 0%, rgba(30, 41, 59, 0.8) 100%);
 }
 
 .hero-container {
